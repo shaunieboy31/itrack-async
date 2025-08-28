@@ -19,6 +19,7 @@ export default function Signup() {
     const studentNo = form.studentNo.value.trim();
     const password = form.password.value;
     const confirmPassword = form.confirmPassword.value;
+    const phone = form.phone.value.trim(); // Added phone number
 
     // Validation
     if (!fullName || !email || !studentNo || !password || !confirmPassword) {
@@ -36,13 +37,6 @@ export default function Signup() {
       setShowAlert(true);
       return;
     }
-
-    // Simulate account exists (replace with your actual API logic)
-    // if (accountExists) {
-    //   setAlertMsg("account-exists");
-    //   setShowAlert(true);
-    //   return;
-    // }
 
     // Simulate success
     setSuccess(true);
@@ -197,6 +191,19 @@ export default function Signup() {
                   className="w-full rounded-lg bg-white px-4 py-2 text-black outline-none ring-0 focus:ring-2 focus:ring-white/70"
                   autoComplete="email"
                   required
+                />
+              </div>
+              <div>
+                <label htmlFor="phone" className="block text-white mb-2">
+                  Phone Number (Optional)
+                </label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="text"
+                  placeholder="Enter Phone Number"
+                  className="w-full rounded-lg bg-white px-4 py-2 text-black outline-none ring-0 focus:ring-2 focus:ring-white/70"
+                  autoComplete="tel"
                 />
               </div>
               <div>
