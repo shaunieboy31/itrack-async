@@ -1,0 +1,6 @@
+<!-- filepath: public/warning.svg -->
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="40,10 75,70 5,70" fill="#fff" stroke="#d32f2f" stroke-width="4"/>
+  <rect x="37" y="32" width="6" height="22" rx="3" fill="#d32f2f"/>
+  <circle cx="40" cy="62" r="4" fill="#d32f2f"/>
+</svg>
